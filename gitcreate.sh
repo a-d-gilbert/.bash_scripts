@@ -8,5 +8,9 @@ curl -i -H 'Authorization: token secret token goes here' \
 		"auto_init": true,
 		"has_issues": true,
 		"gitignore_template": "nanoc" 
-		}' https://api.github.com/user/repos
+		}' https://api.github.com/user/repos &&
+
+		git init &&
+		git remote add origin git@github.com:a-d-gilbert/$dir.git &&
+		git pull origin master 
 
